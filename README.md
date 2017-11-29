@@ -20,5 +20,7 @@ Source: [Apple Support](https://support.apple.com/es-lamr/HT208315)
   
 * Copy the following code in the console:
   
-`payload=$(osascript -e 'do shell script "whoami" with administrator privileges user name "root" password ""');if [ "$payload" = "root" ] ; then echo -e "Vulnerable: Please update! \nMore info: https://support.apple.com/es-lamr/HT208315";else echo "Not Vulnerable";fi`
+```bash
+payload=$(osascript -e 'do shell script "whoami" with administrator privileges user name "root" password ""');if [ "$payload" = "root" ] ; then echo -e "Vulnerable: Please update! \nMore info: https://support.apple.com/es-lamr/HT208315";else echo "Not Vulnerable";fi
+```
 
